@@ -1,0 +1,43 @@
+$small: 480px;
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    color: white;
+    position: relative;
+
+    @media  screen and (max-width: $small) {
+        padding: 1rem;  
+    }
+
+    .author-name{
+        position: absolute;
+        top: 70%;
+        @media  screen and (max-width: $small) {
+            margin-top: 1rem; 
+            top: 75%; 
+        }
+    }
+
+    .quote-para{
+        @media  screen and (max-width: $small) {
+            margin-bottom: 1rem;  
+        }
+    }
+
+    .save-container{
+       position: absolute;
+       top: 80%;
+       left: 90%;
+       .bookmark-icon{
+        cursor: pointer;
+       }
+
+       @media  screen and (max-width: $small) {
+        top: 81%;
+    }
+    }
+}
